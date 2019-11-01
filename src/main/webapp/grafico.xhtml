@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Votaciones</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:outputLabel value="Claudia Lopez" style="margin-left:110px"/>
+            <p:outputLabel value="Carlos Galan" style="margin-left:290px"/>
+            <p:outputLabel value="Hollman Morris" style="margin-left:380px"/>
+            <br/><br/>
+            <img src="Imagenes/Claudialopezsenadora.png" height="200" width="250" style="margin-left:50px"/>
+            <img src="Imagenes/CarlosGalan.jpg" height="200" width="300" style="margin-left:120px"/>
+            <img src="Imagenes/HollmanMorris.jpg" height="200" width="300" style="margin-left:160px"/>
+            <br/><br/>
+            <p:commandButton id="VotoClaudia" value="Votar" update="Votaciones" actionListener="#{grafico.votarClaudia()}" style="margin-left:130px"/>
+            <p:commandButton id="VotoGalan" value="Votar" update="Votaciones" actionListener="#{grafico.votarGalan()}" style="margin-left:320px"/>
+            <p:commandButton id="VotoMorris" value="Votar" update="Votaciones" actionListener="#{grafico.votarMorris()}" style="margin-left:390px"/>
+        <br/><br/>
+        
+        <p:chart id="Votaciones" type="pie" model="#{grafico.livePieModel}" style="width:600px;height:300px;margin-left:320px"/>
+        <p:commandButton value="Finalizar" action="resultados" style="margin-left:520px"/>
+    </h:form>
+    </h:body>
+</html>
+

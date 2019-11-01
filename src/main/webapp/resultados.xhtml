@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Resultados</title>
+    </h:head>
+    <h:body>
+        <h1><center>RESULTADOS DE LAS VOTACIONES</center></h1>
+        <h:form>
+            <p:outputLabel value="Votos por Claudia : "/>
+            <p:outputLabel value="#{grafico.votosClaudia}"/>
+            <p:separator/>
+            <br/><br/>
+            <p:outputLabel value="Votos por Galan : "/>
+            <p:outputLabel value="#{grafico.votosGalan}"/>
+            <p:separator/>
+            <br/><br/>
+            <p:outputLabel value="Votos por Morris : "/>
+            <p:outputLabel value="#{grafico.votosMorris}"/>
+        </h:form>
+    </h:body>
+</html>
+
